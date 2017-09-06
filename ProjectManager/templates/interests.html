@@ -1,0 +1,103 @@
+	{% load staticfiles %}
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rachel Katz</title>
+
+		<!-- Link Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<style type="text/css">
+			
+			.image{
+				position:relative;
+				overflow:hidden;
+				padding-bottom:100%;
+				box-shadow: 0 0.1px 0.2px rgba(0, 0, 0, 0.3); 
+			}
+			.image img{
+				position:absolute;
+				image-orientation: from-image;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<!-- 	<div class="container" style="width: 75%">
+			<div class="row">
+				<div class="col-lg-3 padding-0 panel">
+					<div class="image">
+					<img src="{% static "images/skydive.JPG" %}" class="img img-responsive full-width" />
+					</div>
+				</div>
+				<div class="col-lg-3 padding-0 panel">
+					<div class="image">
+						<img src="{% static "images/atv.JPG" %}" class="img img-responsive full-width" />
+					</div>
+				</div>
+				<div class="col-lg-3 padding-0 panel">
+					<div class="image">
+						<img src="{% static "images/scuba.JPG" %}" class="img img-responsive full-width" />
+					</div>
+				</div>
+				<div class="col-lg-3 padding-0 panel">
+					<div class="image">
+						<img src="{% static "images/Hitbanner.jpeg" %}" class="img img-responsive full-width full-height" style="vertical-align: center" />
+					</div>
+				</div> -->
+				<!-- <td style="width: 25%; height: 200px"><img src="{% static "images/risk/sharkdiving.jpg" %}" class="img img-responsive full-width" /></td> -->
+				<table class='table borderless'>
+					<tr style="height: 200px">
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/traveling/capetownwaterfront.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/traveling/deadsea.JPG" %}" class="img img-responsive full-width" /></td> 
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/traveling/montemarte.JPG" %}" class="img img-responsive full-width" /></td> 
+					</tr>
+					<tr style="height: 200px">
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/traveling/lionshead.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/traveling/eiffeltower.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/traveling/notredame.JPG" %}" class="img img-responsive full-width" /></td>
+					</tr>
+					<tr style="height: 200px">
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/traveling/versailles.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/traveling/versaillesgarden.JPG" %}" class="img img-responsive full-width" /></td> 
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/traveling/waterfall.JPG" %}" class="img img-responsive full-width" /></td>
+					</tr>
+					<tr style="height: 200px">
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/animals/bird.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/animals/camel.JPG" %}" class="img img-responsive full-width" /></td> 
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/animals/puppy.JPG" %}" class="img img-responsive full-width" /></td>
+					</tr>
+					<tr style="height: 200px">
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/animals/israelidog.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/animals/elephants.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%%; height: 200px"><img src="{% static "images/animals/penguin.JPG" %}" class="img img-responsive full-width" /></td>
+					</tr>
+					<tr style="height: 200px">
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/risk/atv.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/risk/skydive.JPG" %}" class="img img-responsive full-width" /></td> 
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/risk/scuba.JPG" %}" class="img img-responsive full-width" /></td>
+						
+					</tr>
+					<tr style="height: 200px">
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/food/candy.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/food/carrots.JPG" %}" class="img img-responsive full-width" /></td> 
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/food/food.JPG" %}" class="img img-responsive full-width" /></td>
+						
+					</tr>
+			
+					<tr style="height: 200px">
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/food/rainbowtoast.JPG" %}" class="img img-responsive full-width" /></td>
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/food/ironchef.JPG" %}" class="img img-responsive full-width" /></td> 
+						<td style="width: 33.33%; height: 200px"><img src="{% static "images/spices.JPG" %}" class="img img-responsive full-width" />
+						</br>
+						<img src="{% static "images/shakshuka.JPG" %}" class="img img-responsive full-width" />
+						</td>
+						
+					</tr>
+				</table>
+			</body>
+			</html>

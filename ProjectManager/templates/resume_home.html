@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rachel Katz</title>
+
+	<!-- Link Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+		}
+
+		.bg {
+			/* The image used */
+			background-image: url("{% static "images/skeletons.jpg" %}");
+
+			/* Full height */
+			height: 100%; 
+
+			/* Center and scale the image nicely */
+			display: inline-block
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.navbar-default {
+			background-color: transparent;
+			border-color: transparent;
+			color: #FFFFFF;
+		}
+		.btn.outline {
+		background: none;
+		padding: 12px 22px;
+		}
+	</style>
+
+</head>
+<div class="bg"> 
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav navbar-right" style="margin-right:1%">
+			<li><a style="color:white"> Home </a></li> 
+			<li><a style="color:white"> About Me </a></li> 
+			<li><a style="color:white"> Current Projects </a></li> 
+			<li><a style="color:white"> Past Projects </a></li> 
+			<li><a href="/resume/" style="color:white"> Resume </a></li> 
+		</ul>	
+	</nav>
+<center style="height:90%;">
+<object text-align="center" width="70%" height="100%" data="{% static 'files/Resume.pdf' %}"></object>
+</center>
+</div>
+

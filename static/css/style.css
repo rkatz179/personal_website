@@ -1,0 +1,25 @@
+.reportRow{
+    font-size: 16px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+.form-group{
+    padding: 20px;
+    text-align: left;
+}
+
+.mark_read_btn{
+    font-size: 14px;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{
+    color: #9d9d9d;
+}
+
+.update_form{
+    margin-left: 15px;
+}

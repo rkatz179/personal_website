@@ -1,0 +1,66 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rachel Katz</title>
+
+	<!-- Link Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+		}
+
+		.bg {
+			/* The image used */
+			background-image: url("{% static "images/skeletons.jpg" %}");
+
+			/* Full height */
+			height: 100%; 
+
+			/* Center and scale the image nicely */
+			display: inline-block
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.navbar-default {
+			background-color: transparent;
+			border-color: transparent;
+			color: #FFFFFF;
+		}
+		.btn.outline {
+		background: none;
+		padding: 12px 22px;
+		}
+	</style>
+
+	
+
+
+</head>
+<body>
+	
+	<div class="bg"> 
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav navbar-right" style="margin-right:1%">
+			<li><a style="color:white"> About Me </a></li> 
+			<li><a style="color:white"> Current Projects </a></li> 
+			<li><a style="color:white"> Past Projects </a></li> 
+			<li><a href="/resume/" style="color:white"> Resume </a></li> 
+		</ul>	
+	</nav>
+	<div>
+	<p style="color:white; padding-top:15%; margin-right:12%; text-align:right; font-family: helvetica; font-size:60px;"><b>HI, I'M RACHEL</b></p>
+	</div>
+	<div style="padding-left: 67%;">
+		<button type="button" class="btn btn-outline-primary" style="border-color: white; border-width: 1.5px; background-color: transparent; color:white">Contact Me</button>
+	</div>
+	</div>
+</body>
+</html>
